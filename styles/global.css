@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary-color: #605FFC; 
+  --primary-title-color: #F8F6F7;
+  --primary-subtitle-color: #666666;
+  --font-family-primary: Poppins;
+  --font-family-primary-subtitle: Roboto;
+  --background-primary-color: #F8F6F7;
+  --background-contrast-color: #ffffff;
+  --backgtound-hover: #6f6ffc;
+  --background-image: url('../../assets/images/bg_pagina_inicial.png');
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: var(--font-family-primary); */
+  list-style: none;
+  text-decoration: none;
+}
+
+.barra {
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  background: var(--primary-color);
+  margin-bottom: 18px;
+}

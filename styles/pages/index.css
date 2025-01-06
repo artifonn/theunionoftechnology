@@ -1,0 +1,63 @@
+main {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background-image: url('../../assets/images/bg_pagina_inicial.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+}
+
+.conteudo {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.conteudo h1 {
+  font-size: 44px;
+  color: var(--primary-title-color);
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.conteudo h2 {
+  color: var(--primary-color);
+  font-family: var(--font-family-primary-subtitle);
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.conteudo h3 {
+  font-family: var(--font-family-primary-subtitle);
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: var(--primary-title-color);
+}
+
+.botao_contato {
+  width: 170px;
+  height: 50px;
+  background: var(--primary-color);
+  color: var(--primary-title-color);
+  border-radius: 5px;
+  border: none;
+  font-family: var(--font-family-primary);
+  font-size: 18px;
+  color: var(--background-primary-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao_contato:hover {
+  background-color: var(--backgtound-hover);
+  color: #e7f2ff;
+}
