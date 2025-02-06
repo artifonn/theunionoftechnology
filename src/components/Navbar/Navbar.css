@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.6); /* Cor do background quando o scroll for detectado */
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  cursor: default;
+}
+
+.menu img {
+  width: 8.125rem;
+  padding-left: 0.938rem;
+}
+
+.menu > div:first-child {
+  justify-self: start;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu > .nav {
+  justify-self: end;
+}
+
+.nav ul {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.nav ul li a {
+  padding: 0.938rem 0.938rem 0.313rem 0.938rem;
+  color: var(--background-contrast-color);
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+}
+
+.nav ul li a:hover {
+  background: var(--primary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-bottom-left-radius: 0.313rem;
+  border-bottom-right-radius: 0.313rem;
+}
+
+.active {
+  background-color: var(--primary-color);
+  color: var(--primary-title-color);
+  border-bottom-left-radius: 0.313rem;
+  border-bottom-right-radius: 0.313rem;
+}

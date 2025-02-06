@@ -1,0 +1,13 @@
+.main-fabricantes {
+  background: var(--background-primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0rem 5rem 0rem;
+}
+
+.title-h1 {
+  width: 80vw;
+  margin-bottom: 0.625rem;
+}
+

@@ -1,0 +1,31 @@
+import React from "react";
+import "./About.css";
+
+function About() {
+  return (
+    <main className="main-about">
+      <div className="conteudo-about" id="about">
+        <h1>Sobre nós</h1>
+        <span className="barra"></span>
+        <div className="texto-about">
+          <p>
+            Bem vindo à The Union of Technology, onde a paixão pela inovação e o
+            compromisso com a excelência se encontram. Fundada por três amigos
+            com mais de duas décadas de experiência combinada, nossa empresa
+            nasceu da visão compartilhada de criar soluções tecnológicas
+            inovadoras.
+          </p>
+          <p>
+            Nós nos especializamos nas seguintes áreas principais:
+            Infraestrutura de redes, Sistemas de CFTV, Sistemas de informação,
+            Desenvolvimento, Controle de Acesso , Desenvolvimento, Cancelas
+            automáticas. Junte-se a nós nesta emocionante jornada rumo ao futuro
+            da tecnologia.
+          </p>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+export default About;

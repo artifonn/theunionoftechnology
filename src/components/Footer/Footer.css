@@ -1,0 +1,7 @@
+.div-footer {
+  text-align: center;
+  font-family: var(--font-family-primary);
+  color: var(--primary-title-color);
+  padding: 15px;
+  background: var(--primary-color);
+}

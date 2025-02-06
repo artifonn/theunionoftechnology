@@ -1,0 +1,67 @@
+.main-index {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0.938rem;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+}
+
+.conteudo {
+  width: 60%;
+  height: auto;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  color: white;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.conteudo h1 {
+  font-size: 2.75rem;
+  color: var(--primary-title-color);
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+  margin-bottom: 1.125rem;
+}
+
+.typewriter-text {
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: 0.125rem 0.125rem 0.875rem rgba(61, 60, 60, 0.5); 
+}
+
+h3 {
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-shadow: 0.125rem 0.125rem 0.875rem rgba(61, 60, 60, 0.5); 
+  color: var(--primary-title-color);
+  margin-bottom: 1.125rem;
+}
+
+.botao_contato {
+  width: 10.625rem;
+  height: 3.125rem;
+  background: var(--primary-color);
+  color: var(--primary-title-color);
+  border-radius: 0.3125rem;
+  border: none;
+  font-family: var(--font-family-primary);
+  font-size: 1.125rem;
+  color: var(--background-primary-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao_contato:hover {
+  background-color: var(--backgtound-hover);
+  color: #e7f2ff;
+}

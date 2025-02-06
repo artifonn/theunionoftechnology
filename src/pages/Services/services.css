@@ -1,0 +1,51 @@
+.main-services {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0rem 5rem 0rem;
+  background: var(--background-primary-color);
+}
+
+.container-services {
+  display: grid; /* Ativa o CSS Grid */
+  grid-template-columns: repeat(2, 1fr); /* Define duas colunas de largura igual */
+  gap: 1.875rem; /* Espaço entre as colunas e linhas */
+  width: 100%; /* Largura total do container */
+  box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+.conteudo-service {
+  width: 80vw;
+}
+
+.conteudo-service h1 {
+  margin-bottom: 0.625rem;
+  font-family: var(--font-family-primary);
+  color: var(--primary-subtitle-color);
+}
+
+.div_services {
+  background-color: var(--background-contrast-color); 
+  border-radius: 0.5rem; /* Cantos arredondados */
+  padding: 1.25rem 1.875rem; /* Espaçamento interno */
+  text-align: justify; /* Centraliza texto e imagem */
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Adiciona sombra para profundidade */
+}
+
+.div_services img {
+  max-width: 5rem; /* Limita a largura da imagem */
+  margin-bottom: 0.9375rem; /* Espaçamento abaixo da imagem */
+}
+
+.div_services h2 {
+  font-family: var(--font-family-primary);
+  font-size: 1.125rem;
+  color: var(--primary-color);
+  margin-bottom: 0.625rem;
+}
+
+.div_services p {
+  font-size: 0.875rem; /* Tamanho do texto */
+  font-family: var(--font-family-primary);
+  color: var(--primary-subtitle-color);
+  line-height: 1.6; /* Altura da linha para melhor leitura */
+}
