@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Contact.css';
+import contact from "../../assets/images/Memory storage.gif";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -27,9 +28,8 @@ const ContactForm = () => {
       phone,
       message,
     };
-    console.log(emailData); // Simulação de envio para o email corporativo
+    console.log(emailData); 
     alert("Mensagem enviada com sucesso!");
-    // Você pode enviar os dados para um servidor ou serviço de backend para envio de email real
   };
 
   return (
@@ -40,7 +40,7 @@ const ContactForm = () => {
       </div>
       <div className="formulario-imagem">
         <div class="imagem">
-          <p>foto</p>
+          <img src={contact} alt="Imagem de três pessoas se comprimentando" />
         </div>
         <div className="formulario">
           <form onSubmit={handleSubmit}>

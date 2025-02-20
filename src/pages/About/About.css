@@ -15,8 +15,11 @@
 }
 
 .texto-about {
+  display: flex;
   flex-direction: column;
   text-align: justify;
+  justify-content: center;
+  height: 30vh;
   font-family: var(--font-family-primary);
   font-size: 1.125rem;
   width: 80vw;

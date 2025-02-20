@@ -1,5 +1,6 @@
 .main-contatos {
   display: flex;
+  height: 90vh;
   flex-direction: column;
   align-items: center;
   padding: 5rem 0rem 5rem 0rem;
@@ -18,11 +19,13 @@
 
 .formulario-imagem{
   display: flex;
+  justify-content: space-around;
   width: 80vw;
+  align-items: center;
 }
 
-.imagem {
-  width: 50vw;
+.imagem img {
+  width: 30vw;
 }
 
 .area-formulario {
@@ -38,10 +41,10 @@
   min-width: 600px;
   max-width: 600px;
   border: none;
-  background: var(--background-primary-color);
   margin: 0.625rem 0rem;
   border-radius: 0.313rem;
   padding-left: 0.313rem;
+  background: var(--background-primary-color);
 }
 
 .formulario textarea {

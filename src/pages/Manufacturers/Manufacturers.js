@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./Manufacturers.css";
 
-import PPA from "../../assets/images/ppa.png";
+import PPA from "../../assets/images/PPA-logo.png";
 import huawei from "../../assets/images/logo-huawei.png";
 import intelbras from "../../assets/images/intelbras.png";
 import fortnet from "../../assets/images/fortnet.png";
