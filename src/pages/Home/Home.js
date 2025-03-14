@@ -8,7 +8,6 @@ function Home() {
       <div className="conteudo">
         <h1>Transformamos visões em soluções Tecnológicas inovadoras</h1>
         <span className="barra"></span>
-        {/* <h2>Infraestrutura de Redes</h2> */}
         <span className="typewriter-text">
           <Typewriter
             words={[
@@ -19,16 +18,14 @@ function Home() {
             ]}
             loop={Infinity}
             cursor
-            cursorStyle="|"
+            cursorStyle="_"
             typeSpeed={50}
             deleteSpeed={50}
             delaySpeed={1000}
           />
         </span>
         <h3>Equipe altamente qualificada.</h3>
-        <a href="#contact">
-          <button className="botao_contato">Contato</button>
-        </a>
+        <button className="botao_contato"><a href="#contact">Contato</a></button>
       </div>
     </main>
   );

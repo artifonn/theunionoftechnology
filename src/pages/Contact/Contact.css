@@ -1,47 +1,52 @@
 .main-contatos {
   display: flex;
-  height: 90vh;
+  height: auto;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 0rem 5rem 0rem;
+  padding: 5rem 0;
+  background: var(--background-contrast-color);
 }
 
 .title-h1 {
   width: 80vw;
-  margin-bottom: 0.625rem;
+  max-width: 1200px;
+  margin-bottom: 1.5rem;
 }
 
-.container_h1 {
-  display: inline-block;
-  width: 70%;
-  margin: 6.063rem 0rem 0rem 2.75rem;
+.title-h1 h1 {
+  font-family: var(--font-family-primary);
+  color: var(--primary-subtitle-color);
+  font-size: 2.5rem;
 }
 
-.formulario-imagem{
+.formulario-imagem {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  width: 80vw;
   align-items: center;
+  width: 80vw;
+  max-width: 1200px;
+  gap: 2rem;
 }
 
 .imagem img {
   width: 30vw;
+  max-width: 400px;
+  height: auto;
 }
 
-.area-formulario {
+.formulario {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .formulario input,
 .formulario textarea {
-  display: flex;
-  flex-direction: column;
   line-height: 1.875rem;
-  min-width: 600px;
-  max-width: 600px;
+  width: 100%;
   border: none;
-  margin: 0.625rem 0rem;
+  margin: 0.625rem 0;
   border-radius: 0.313rem;
   padding-left: 0.313rem;
   background: var(--background-primary-color);
@@ -72,9 +77,96 @@
   border: solid 1px var(--primary-color);
   background: transparent;
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  margin-top: 1rem;
 }
 
 .formulario button:hover {
   background-color: var(--primary-color);
   color: var(--primary-title-color);
+}
+
+@media (max-width: 992px) {
+  .title-h1 h1 {
+    font-size: 2.25rem;
+  }
+
+  .imagem img {
+    width: 80vw;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  .formulario button {
+    background-color: var(--primary-color);
+    color: var(--background-contrast-color);
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-h1 h1 {
+    font-size: 2rem;
+  }
+
+  .formulario-imagem {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .imagem img {
+    width: 80vw;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  .formulario button {
+    background-color: var(--primary-color);
+    color: var(--background-contrast-color);
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-contatos {
+    padding: 3rem 0;
+  }
+
+  .title-h1 h1 {
+    font-size: 1.75rem;
+  }
+
+  .formulario-imagem {
+    width: 90vw;
+    gap: 1rem;
+  }
+
+  .imagem img {
+    width: 80vw;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 0.875rem;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .formulario label {
+    font-size: 1.1rem;
+  }
+
+  .formulario button {
+    background-color: var(--primary-color);
+    color: var(--background-contrast-color);
+    font-weight: 600;
+    height: 2.5rem;
+  }
 }

@@ -37,3 +37,29 @@
   align-items: center;
   width: 90vw;
 }
+
+
+@media (max-width: 992px) {
+  .conteudo-about h1 {
+    font-size: 2rem;
+  }
+
+  .texto-about {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-about {
+    padding-bottom: 2rem;
+  }
+
+  .texto-about {
+    font-size: 0.80rem;
+    padding-top: 2rem;
+  }
+
+  .texto-about p {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,29 +1,30 @@
-import React, { useState, useEffect }from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/logotheuniontenology.png";
 import "./Navbar.css";
 
 function Navbar() {
   const [activeLink, setActiveLink] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
-   useEffect(() => {
-     // Função que será chamada sempre que o evento de scroll acontecer
-     const handleScroll = () => {
-       if (window.scrollY > 50) {
-         // Quando o scroll for maior que 50px
-         setIsScrolled(true);
-       } else {
-         setIsScrolled(false);
-       }
-     };
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar o menu hambúrguer
 
-     // Adiciona o ouvinte de evento para o scroll
-     window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-     // Remove o ouvinte de evento quando o componente for desmontado
-     return () => {
-       window.removeEventListener("scroll", handleScroll);
-     };
-   }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Alternar entre abrir e fechar o menu
+  };
 
   return (
     <header className={`navbar ${isScrolled ? "scrolled" : ""}`}>
@@ -31,16 +32,24 @@ function Navbar() {
         <div>
           <a href="#home">
             <img src={logo} alt="Logo The Union Technology" />
-          </a>  
+          </a>
+        </div>
+        <div className="hamburger" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-      <nav className="nav">
+      <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
             <a
               href="#home"
               className={activeLink === "home" ? "nav-item active" : "nav-item"}
-              onClick={() => setActiveLink("home")}
+              onClick={() => {
+                setActiveLink("home");
+                setIsMenuOpen(false); // Fechar o menu ao clicar em um link
+              }}
             >
               Início
             </a>
@@ -51,7 +60,10 @@ function Navbar() {
               className={
                 activeLink === "about" ? "nav-item active" : "nav-item"
               }
-              onClick={() => setActiveLink("about")}
+              onClick={() => {
+                setActiveLink("about");
+                setIsMenuOpen(false);
+              }}
             >
               Sobre
             </a>
@@ -62,7 +74,10 @@ function Navbar() {
               className={
                 activeLink === "services" ? "nav-item active" : "nav-item"
               }
-              onClick={() => setActiveLink("services")}
+              onClick={() => {
+                setActiveLink("services");
+                setIsMenuOpen(false);
+              }}
             >
               Serviços
             </a>
@@ -73,7 +88,10 @@ function Navbar() {
               className={
                 activeLink === "clients" ? "nav-item active" : "nav-item"
               }
-              onClick={() => setActiveLink("clients")}
+              onClick={() => {
+                setActiveLink("clients");
+                setIsMenuOpen(false);
+              }}
             >
               Clientes
             </a>
@@ -84,7 +102,10 @@ function Navbar() {
               className={
                 activeLink === "manufacturers" ? "nav-item active" : "nav-item"
               }
-              onClick={() => setActiveLink("manufacturers")}
+              onClick={() => {
+                setActiveLink("manufacturers");
+                setIsMenuOpen(false);
+              }}
             >
               Fabricantes
             </a>
@@ -95,7 +116,10 @@ function Navbar() {
               className={
                 activeLink === "contact" ? "nav-item active" : "nav-item"
               }
-              onClick={() => setActiveLink("contact")}
+              onClick={() => {
+                setActiveLink("contact");
+                setIsMenuOpen(false);
+              }}
             >
               Contato
             </a>

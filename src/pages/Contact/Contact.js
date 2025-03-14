@@ -20,7 +20,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode implementar o código para enviar o email
     const { name, email, phone, message } = formData;
     const emailData = {
       name,

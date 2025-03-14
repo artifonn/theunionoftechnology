@@ -20,17 +20,8 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 function App() {
   return (
     <Router>
-      <Navbar />
       <div>
-        {/* <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/clients" element={<Clients />} />
-          <Route path="/manufacturers" element={<Manufacturers />} />
-          <Route path="/support" element={<Support />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes> */}
+        <Navbar />
         <Home />
         <About />
         <Services />

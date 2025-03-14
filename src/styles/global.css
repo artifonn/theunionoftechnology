@@ -64,7 +64,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: var(--background-primary-color); */
 }
 
 .slide img {
@@ -81,13 +80,12 @@ button.next {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
   border: none;
-  padding: 0.9375rem;
   cursor: pointer;
   width: 3.125rem;
   height: 3.125rem;
   border-radius: 50%;
   z-index: 10;
-  transition: background-color 0.3s ease; /* Adiciona transição suave */
+  transition: background-color 0.3s ease;
 }
 
 button.prev {
@@ -100,5 +98,5 @@ button.next {
 
 button.prev:hover,
 button.next:hover {
-  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo no hover */
+  background-color: rgba(0, 0, 0, 0.5);
 }

@@ -22,23 +22,20 @@ function Clients() {
     { src: huawei, alt: "Cliente huawei" },
   ];
 
-  // Função para ir ao próximo slide, memorizada para evitar recriação em cada renderização
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % clients.length);
   }, [clients.length]);
 
-  // Função para voltar ao slide anterior
   const prevSlide = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + clients.length) % clients.length
     );
   };
 
-  // Configurar o intervalo para troca automática
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000); // Muda o slide a cada 3 segundos
-    return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
-  }, [nextSlide]); // Adicionamos nextSlide como dependência
+    const interval = setInterval(nextSlide, 3000);
+    return () => clearInterval(interval);
+  }, [nextSlide]);
 
   return (
     <main className="main-fabricantes" id="manufacturers">

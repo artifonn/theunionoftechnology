@@ -15,10 +15,10 @@
 }
 
 .menu {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  cursor: default;
+  width: 100%;
 }
 
 .menu img {
@@ -26,14 +26,18 @@
   padding-left: 0.938rem;
 }
 
-.menu > div:first-child {
-  justify-self: start;
-  font-size: 1.5rem;
-  font-weight: bold;
+.hamburger {
+  display: none; /* Esconder o ícone do hambúrguer em telas maiores */
+  flex-direction: column;
+  cursor: pointer;
 }
 
-.menu > .nav {
-  justify-self: end;
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--background-contrast-color);
+  margin: 4px 0;
+  transition: 0.3s;
 }
 
 .nav ul {
@@ -60,4 +64,40 @@
   color: var(--primary-title-color);
   border-bottom-left-radius: 0.313rem;
   border-bottom-right-radius: 0.313rem;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Mostrar o ícone do hambúrguer em telas menores */
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav.open {
+    max-height: 500px; /* Altura máxima para exibir o menu */
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav ul li a {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+  }
 }

@@ -18,22 +18,19 @@ function Clients() {
     { src: maminfo, alt: "Cliente MAMINFO" },
   ];
 
-  // Função para ir ao próximo slide
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % clients.length);
   };
 
-  // Função para voltar ao slide anterior
   const prevSlide = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + clients.length) % clients.length
     );
   };
 
-  // Configurar o intervalo para troca automática
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000); // Muda o slide a cada 3 segundos
-    return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
+    const interval = setInterval(nextSlide, 3000); 
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -52,7 +49,7 @@ function Clients() {
               <img
                 src={client.src}
                 alt={client.alt}
-                style={{ width: "90%" }} // Define o tamanho das imagens como 90% da largura do slide
+                style={{ width: "90%" }}
               />
             </div>
           ))}
