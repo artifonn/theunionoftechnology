@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser"; // Importe o EmailJS
 import './Contact.css';
 import contact from "../../assets/images/Memory storage.gif";
 
@@ -20,25 +21,31 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, phone, message } = formData;
-    const emailData = {
-      name,
-      email,
-      phone,
-      message,
-    };
-    console.log(emailData); 
-    alert("Mensagem enviada com sucesso!");
+
+    const serviceID = "service_nccpfzj";
+    const templateID = "template_vl5r5po";
+    const publicKey = "cbZ-TtE2f0OzC5C7o";
+
+    emailjs.send(serviceID, templateID, formData, publicKey)
+      .then((response) => {
+        console.log("Email enviado com sucesso!", response.status, response.text);
+        alert("Mensagem enviada com sucesso!");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      })
+      .catch((error) => {
+        console.error("Erro ao enviar o email:", error);
+        alert("Ocorreu um erro ao enviar a mensagem. Tente novamente.");
+      });
   };
 
   return (
     <main className="main-contatos" id="contact">
-      <div class="title-h1">
+      <div className="title-h1">
         <h1>Contato</h1>
         <span className="barra"></span>
       </div>
       <div className="formulario-imagem">
-        <div class="imagem">
+        <div className="imagem">
           <img src={contact} alt="Imagem de três pessoas se comprimentando" />
         </div>
         <div className="formulario">

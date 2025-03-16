@@ -2,9 +2,11 @@ import React from "react";
 import "./services.css";
 
 import consultoria from '../../assets/images/consultoria_icone.png';
-import CFTV from '../../assets/images/CFTV_icone';
+import CFTV from '../../assets/images/CFTV_icone.png';
 import administraçãoServidores from '../../assets/images/administacao_servidores_icone.png';
 import suporteTecnico from '../../assets/images/suporte_icone.png';
+import infraestruturaTI from '../../assets/images/infraestrutura-TI.png';
+import manutencaoComputadores from '../../assets/images/manutencaocomputadores.png';
 
 function Services() {
   return (
@@ -58,6 +60,32 @@ function Services() {
               infraestruturas de rede com alta disponibilidade e performance.
             </p>
           </div>
+
+          <div className="div_services">
+            <img
+              src={infraestruturaTI}
+              alt="Infraestrutura de TI"
+            />
+            <h2>Infraestrutura de TI</h2>
+            <p>
+              A Infraestrutura de TI refere-se a todo o conjunto de componentes
+              necessários para suportar as operações de tecnologia em uma organização. 
+              Isso inclui hardware, software, redes, data centers, sistemas de segurança, bem como 
+              recursos humanos e processos associados.
+            </p>
+          </div>
+          <div className="div_services">
+            <img
+              src={manutencaoComputadores}
+              alt="Manutenção de Computadores"
+            />
+            <h2>Manutenção de Computadores</h2>
+            <p>
+            Oferecemos serviços especializados de manutenção de computadores, notebooks e dispositivos relacionados, garantindo o bom funcionamento e a longevidade dos seus equipamentos. Nossa equipe técnica qualificada realiza diagnósticos precisos, reparos de hardware, atualizações de software, remoção de vírus e otimização de desempenho. Com soluções personalizadas e atendimento ágil, ajudamos sua empresa a evitar falhas e manter a produtividade em alta. Conte conosco para cuidar da sua infraestrutura de TI, enquanto você foca no que realmente importa: o crescimento do seu negócio.
+            </p>
+          </div>
+
+
         </div>
       </div>
     </main>

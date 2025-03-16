@@ -1,6 +1,6 @@
 .main-services {
   display: flex;
-  height: 100vh;
+  height: auto;
   padding-bottom: 3rem;
   justify-content: center;
   padding: 5rem 0rem 5rem 0rem;
@@ -40,13 +40,13 @@
 
 .div_services h2 {
   font-family: var(--font-family-primary);
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: var(--primary-color);
   margin-bottom: 0.625rem;
 }
 
 .div_services p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-family: var(--font-family-primary);
   color: var(--primary-subtitle-color);
   line-height: 1.6;
@@ -69,38 +69,12 @@
   }
 
   .conteudo-service {
-    width: 90vw;
+    width: 100vw;
+    padding: 0px 16px;
   }
 
   .div_services {
     padding: 1rem;
   }
 
-  .div_services p {
-    font-size: 0.8125rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-services {
-    height: auto;
-    padding: 3rem 0;
-  }
-
-  .container-services {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .div_services {
-    padding: 0.75rem;
-  }
-
-  .div_services h2 {
-    font-size: 0.9375rem;
-  }
-
-  .div_services p {
-    font-size: 0.75rem;
-  }
 }

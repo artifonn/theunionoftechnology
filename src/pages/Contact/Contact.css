@@ -1,6 +1,7 @@
 .main-contatos {
   display: flex;
   height: auto;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   padding: 5rem 0;
@@ -8,15 +9,12 @@
 }
 
 .title-h1 {
-  width: 80vw;
-  max-width: 1200px;
   margin-bottom: 1.5rem;
 }
 
 .title-h1 h1 {
   font-family: var(--font-family-primary);
   color: var(--primary-subtitle-color);
-  font-size: 2.5rem;
 }
 
 .formulario-imagem {
@@ -50,6 +48,8 @@
   border-radius: 0.313rem;
   padding-left: 0.313rem;
   background: var(--background-primary-color);
+  color: var(--primary-subtitle-color);
+  font-size: 1rem;
 }
 
 .formulario textarea {
@@ -64,8 +64,8 @@
 
 .formulario label {
   font-family: var(--font-family-primary);
-  font-size: 1.25rem;
   color: var(--primary-color);
+  font-size: 1.2rem;
 }
 
 .formulario button {
@@ -86,9 +86,6 @@
 }
 
 @media (max-width: 992px) {
-  .title-h1 h1 {
-    font-size: 2.25rem;
-  }
 
   .imagem img {
     width: 80vw;
@@ -106,9 +103,6 @@
 }
 
 @media (max-width: 768px) {
-  .title-h1 h1 {
-    font-size: 2rem;
-  }
 
   .formulario-imagem {
     flex-direction: column;
@@ -135,8 +129,9 @@
     padding: 3rem 0;
   }
 
-  .title-h1 h1 {
-    font-size: 1.75rem;
+  .title-h1 {
+    width: 100%;
+    padding: 0px 16px;
   }
 
   .formulario-imagem {
@@ -154,13 +149,9 @@
 
   .formulario input,
   .formulario textarea {
-    font-size: 0.875rem;
     min-width: 100%;
     max-width: 100%;
-  }
-
-  .formulario label {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .formulario button {

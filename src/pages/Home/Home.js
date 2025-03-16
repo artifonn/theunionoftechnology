@@ -14,7 +14,7 @@ function Home() {
               "Infraestrutura CFTV",
               "Redes",
               "Consultoria em TI",
-              "Administração de Servidores.",
+              "Administração de Servidores",
             ]}
             loop={Infinity}
             cursor

@@ -1,6 +1,7 @@
 .main-fabricantes {
   display: flex;
   height: 100vh;
+  width: 100%;
   background: var(--background-primary-color);
   flex-direction: column;
   align-items: center;
@@ -18,9 +19,9 @@
   height: 90vh;
 }
 
- @media (max-width: 480px) {
-  .main-clients {
-    padding: 3rem 0;
+ @media (max-width: 780px) {
+  .main-fabricantes {
+    width: 100vw;
   }
 
   .prev,

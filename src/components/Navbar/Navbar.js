@@ -5,7 +5,7 @@ import "./Navbar.css";
 function Navbar() {
   const [activeLink, setActiveLink] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar o menu hambúrguer
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +23,7 @@ function Navbar() {
   }, []);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Alternar entre abrir e fechar o menu
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -48,7 +48,7 @@ function Navbar() {
               className={activeLink === "home" ? "nav-item active" : "nav-item"}
               onClick={() => {
                 setActiveLink("home");
-                setIsMenuOpen(false); // Fechar o menu ao clicar em um link
+                setIsMenuOpen(false); 
               }}
             >
               Início

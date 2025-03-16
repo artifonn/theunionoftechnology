@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Clients.css";
 
 import findUp from "../../assets/images/findUp.png";
-import intelbras from "../../assets/images/intelbras.png";
 import sgbr from "../../assets/images/logo-sgbr-og.png";
 import maminfo from "../../assets/images/MAMINFO-LOGO.png";
 import cocacola from "../../assets/images/coca-cola.png";
@@ -13,7 +12,6 @@ function Clients() {
   const clients = [
     { src: cocacola, alt: "Cliente Coca-Cola" },
     { src: findUp, alt: "Cliente FindUp" },
-    { src: intelbras, alt: "Cliente Intelbras" },
     { src: sgbr, alt: "Cliente SGBR" },
     { src: maminfo, alt: "Cliente MAMINFO" },
   ];

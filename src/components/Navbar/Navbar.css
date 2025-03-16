@@ -22,7 +22,7 @@
 }
 
 .menu img {
-  width: 8.125rem;
+  width: 10rem;
   padding-left: 0.938rem;
 }
 
@@ -66,18 +66,17 @@
   border-bottom-right-radius: 0.313rem;
 }
 
-/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
   .hamburger {
-    display: flex; /* Mostrar o ícone do hambúrguer em telas menores */
+    display: flex;
   }
 
   .nav {
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    right: 0;
+    width: 95%;
+    background: rgba(0, 0, 0, 0.6);
     flex-direction: column;
     align-items: center;
     max-height: 0;
@@ -86,7 +85,7 @@
   }
 
   .nav.open {
-    max-height: 500px; /* Altura máxima para exibir o menu */
+    max-height: 500px;
   }
 
   .nav ul {
@@ -99,5 +98,11 @@
     padding: 1rem;
     width: 100%;
     display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav ul li a {
+    font-size: 1.2rem;
   }
 }

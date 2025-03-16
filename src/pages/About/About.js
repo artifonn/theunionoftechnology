@@ -17,9 +17,13 @@ function About() {
           </p>
           <p>
             Nós nos especializamos nas seguintes áreas principais:
-            Infraestrutura de redes, Sistemas de CFTV, Sistemas de informação,
-            Desenvolvimento, Controle de Acesso , Desenvolvimento, Cancelas
-            automáticas. Junte-se a nós nesta emocionante jornada rumo ao futuro
+            infraestrutura de redes, sistemas de CFTV, sistemas de informação,
+            desenvolvimento, controle de cesso e cancelas automáticas.
+          </p>
+          <p>
+            A nossa visão é corresponder e exceder as expectativas dos nossos clientes, provendo soluções e serviços de elevadas qualidades. Utilizamos o relacionamento interpessoal como diferencial na busca pela excelência no atendimento.
+            Nossas soluções buscam reduzir custos, aumentando os beneficios e a rentabilidade operacional dos nossos clientes.
+            Junte-se a nós nesta emocionante jornada rumo ao futuro
             da tecnologia.
           </p>
         </div>
