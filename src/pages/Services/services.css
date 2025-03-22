@@ -3,13 +3,13 @@
   height: auto;
   padding-bottom: 3rem;
   justify-content: center;
-  padding: 5rem 0rem 5rem 0rem;
+  padding: 5rem 0;
   background: var(--background-primary-color);
 }
 
 .container-services {
-  display: grid; 
-  grid-template-columns: repeat(2, 1fr); 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.875rem;
   width: 100%;
   box-sizing: border-box;
@@ -26,7 +26,7 @@
 }
 
 .div_services {
-  background-color: var(--background-contrast-color); 
+  background-color: var(--background-contrast-color);
   border-radius: 0.5rem;
   padding: 1.25rem 1.875rem;
   text-align: justify;
@@ -48,21 +48,27 @@
 .div_services p {
   font-size: 1rem;
   font-family: var(--font-family-primary);
+  text-align: left;
   color: var(--primary-subtitle-color);
   line-height: 1.6;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 480px) {
   .main-services {
-    height: auto;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
+  }
+
+  .main-services h1 {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .main-services {
     height: auto;
+    padding: 5rem 3.4375rem;
   }
+
   .container-services {
     grid-template-columns: 1fr;
     padding: 2rem 0;
@@ -70,11 +76,23 @@
 
   .conteudo-service {
     width: 100vw;
-    padding: 0px 16px;
+    padding: 0 1rem;
   }
 
   .div_services {
     padding: 1rem;
   }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h2 {
+    text-align: start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-services {
+    height: auto;
+    padding-bottom: 3rem;
+  }
 }

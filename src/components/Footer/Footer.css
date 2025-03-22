@@ -53,9 +53,25 @@
 @media (max-width: 480px) {
   .footer-content {
     flex-direction: column;
+    max-width: 100%;
   }
 
   .footer-section {
     margin: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 0;
+    max-width: 85%;
   }
 }

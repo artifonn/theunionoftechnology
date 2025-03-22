@@ -19,7 +19,13 @@
   height: 90vh;
 }
 
- @media (max-width: 780px) {
+@media (max-width: 480px) {
+  .main-fabricantes h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 780px) {
   .main-fabricantes {
     width: 100vw;
   }
