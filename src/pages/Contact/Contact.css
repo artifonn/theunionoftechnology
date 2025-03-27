@@ -71,8 +71,8 @@
 .formulario button {
   font-family: var(--font-family-primary);
   color: var(--primary-color);
-  width: 8.125rem;
-  height: 1.875rem;
+  width: 10rem;
+  height: 2.5rem;
   border-radius: 0.313rem;
   border: solid 1px var(--primary-color);
   background: transparent;
@@ -83,6 +83,60 @@
 .formulario button:hover {
   background-color: var(--primary-color);
   color: var(--primary-title-color);
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: var(--backgroud-alert);
+  color: var(--alert-error);
+  border-left: 4px solid var(--alert-error);
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  border-left: 4px solid;
+}
+
+.alert.success {
+  background-color: var(--backgroud-alert-success);
+  color: var(--alert-succes);
+  border-color: var(--alert-succes);
+}
+
+.alert.error {
+  background-color: var(--backgroud-alert);
+  color: var(--alert-error);
+  border-color: var(--alert-error);
+}
+
+
+button.loading {
+  opacity: 0.7;
+  position: relative;
+}
+
+button.loading::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top-color: var(--background-contrast-color);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: translateY(-50%) rotate(360deg); }
 }
 
 @media only screen and (max-width: 480px) {
@@ -102,6 +156,7 @@
   .formulario-imagem {
     width: 90vw;
     gap: 1rem;
+    flex-direction: column;
   }
 
   .imagem img {

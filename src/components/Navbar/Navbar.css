@@ -11,7 +11,7 @@
 }
 
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.6); /* Cor do background quando o scroll for detectado */
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .menu {
@@ -27,7 +27,7 @@
 }
 
 .hamburger {
-  display: none; /* Esconder o ícone do hambúrguer em telas maiores */
+  display: none;
   flex-direction: column;
   cursor: pointer;
 }

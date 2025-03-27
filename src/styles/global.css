@@ -8,6 +8,10 @@
   --background-primary-color: #F8F8F8;
   --background-contrast-color: #ffffff;
   --backgtound-hover: #6f6ffc;
+  --alert-error: #c62828;
+  --alert-succes: #2e7d32;
+  --backgroud-alert: #ffebee;
+  --backgroud-alert-success: #e8f5e9;
   --background-image: url('../assets/images/bg_pagina_inicial.png');
 }
 

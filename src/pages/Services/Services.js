@@ -14,7 +14,7 @@ function Services() {
       <div className="conteudo-service">
         <h1>Serviços</h1>
         <span className="barra"></span>
-        <div class="container-services">
+        <div className="container-services">
           <div className="div_services">
             <img src={consultoria} alt="Consultoria e Infraestrutura" />
             <h2>Consultoria em TI e Infraestrutura</h2>
