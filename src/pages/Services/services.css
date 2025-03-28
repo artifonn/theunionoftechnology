@@ -43,6 +43,7 @@
   font-size: 1.2rem;
   color: var(--primary-color);
   margin-bottom: 0.625rem;
+  text-align: left;
 }
 
 .div_services p {
